@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('./image/download.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <img src="image/helicopter-2.gif" id="helicopter"/>
+    <img src="image/cloud_PNG32.png" id="cloud" />
+    <img src="image/bird-2.gif" id='bird-2'/>
+    <img src="image/bird.gif" id='bird'/>
+    <img src="image/cloud_PNG32 - Copy.png" id="cloud-1" />
+    <img src="image/cloud_PNG32 - Copy (2).png" id="cloud-2"/>
+    
+    <script>
+        var elem = document.querySelector("#cloud");
+
+        var animatedElem = elem.animate([
+            { transform: 'translate(0, 0)' },
+            { transform: 'translate(2600px, 0)' }
+
+        ], {
+            duration: 60000,
+            iterations: Infinity
+        })
+        document.addEventListener("mousedown", () => {
+            animatedElem.pause();
+        })
+        document.addEventListener("mouseup", () => {
+            animatedElem.play();
+        })
+        
+    </script>
+    <script>
+        var elem = document.querySelector("#bird");
+    
+        var animatedElem3 = elem.animate([
+            { transform: 'translate(0, 0)' },
+            { transform: 'translate(2000px, 0)' }
+    
+        ], {
+            duration: 20000,
+            iterations: Infinity
+        })
+        document.addEventListener("mousedown", () => {
+            animatedElem3.pause();
+        })
+        document.addEventListener("mouseup", () => {
+            animatedElem3.play();
+        })
+    </script>
+        <script>
+            var elem = document.querySelector("#bird-2");
+        
+            var animatedElem4 = elem.animate([
+                { transform: 'translate(0, 0)' },
+                { transform: 'translate(2500px, 0)' }
+        
+            ], {
+                duration: 4000,
+                iterations: Infinity
+            })
+            document.addEventListener("mousedown", () => {
+                animatedElem4.pause();
+            })
+            document.addEventListener("mouseup", () => {
+                animatedElem4.play();
+            })
+        </script>
+         <script>
+            var elem = document.querySelector("#helicopter");
+        
+            var animatedElem5 = elem.animate([
+                { transform: 'translate(0, 0)' },
+                { transform: 'translate(2500px, 0)' }
+        
+            ], {
+                duration: 10000,
+                iterations: Infinity
+            })
+            document.addEventListener("mousedown", () => {
+                animatedElem5.pause();
+            })
+            document.addEventListener("mouseup", () => {
+                animatedElem5.play();
+            })
+        </script>
+    <script>
+            var elem = document.querySelector("#cloud-1");
+
+            var animatedElem1 = elem.animate([
+                { transform: 'translate(0, 0)' },
+                { transform: 'translate(1500px,0 )' }
+
+            ], {
+                duration: 250000,
+                iterations: Infinity
+            })
+            document.addEventListener("mousedown", () => {
+                animatedElem1.pause();
+            })
+            document.addEventListener("mouseup", () => {
+                animatedElem1.play();
+            })
+    </script>
+     <script>
+        var elem = document.querySelector("#cloud-2");
+
+        var animatedElem2 = elem.animate([
+            { transform: 'translate(0, 0)' },
+            { transform: 'translate(1500px, 0)' },
+
+        ], {
+            duration: 200000,
+            iterations: Infinity
+        })
+        document.addEventListener("mousedown", () => {
+            animatedElem2.pause();
+        })
+        document.addEventListener("mouseup", () => {
+            animatedElem2.play();
+        })
+</script>
+
+</body>
+
+</html>
